@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ApplePayDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="raz-NM-Hol">
+                                <rect key="frame" x="78" y="623" width="219" height="38"/>
+                                <state key="normal" image="ApplePayImage"/>
+                                <connections>
+                                    <action selector="touchApplePayButton:" destination="BYZ-38-t0r" eventType="touchDown" id="qdY-D5-4OF"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="macbook-select-space-gray-201706" translatesAutoresizingMaskIntoConstraints="NO" id="go1-JC-CNR">
+                                <rect key="frame" x="37.5" y="183.5" width="300" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="7Mr-mV-2p4"/>
+                                    <constraint firstAttribute="height" constant="300" id="wF5-Fe-3FJ"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$100.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mIF-Xx-cLr">
+                                <rect key="frame" x="130.5" y="491" width="114" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" red="1" green="0.084393614217168067" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="raz-NM-Hol" firstAttribute="top" secondItem="mIF-Xx-cLr" secondAttribute="bottom" constant="96" id="08V-jB-vg9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="raz-NM-Hol" secondAttribute="bottom" constant="6" id="TUc-cr-AAi"/>
+                            <constraint firstItem="raz-NM-Hol" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="78" id="VAv-G1-UBB"/>
+                            <constraint firstItem="mIF-Xx-cLr" firstAttribute="top" secondItem="go1-JC-CNR" secondAttribute="bottom" constant="7.5" id="a9T-6l-lI1"/>
+                            <constraint firstItem="raz-NM-Hol" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bpu-Ve-fG5"/>
+                            <constraint firstItem="go1-JC-CNR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cbN-CW-mGE"/>
+                            <constraint firstItem="go1-JC-CNR" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ftF-7D-U1f"/>
+                            <constraint firstItem="mIF-Xx-cLr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sWo-le-hqb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="applePayButton" destination="raz-NM-Hol" id="WFY-kb-oNk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="40.799999999999997" y="26.53673163418291"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ApplePayImage" width="212" height="38"/>
+        <image name="macbook-select-space-gray-201706" width="904" height="840"/>
+    </resources>
+</document>
