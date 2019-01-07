@@ -1,5 +1,5 @@
 # ApplePayDemo
-This is the demo swift app for apple pay, the encrypted data and ephểmalPublicKey can be found on xcode output after apple pay process successfully.
+This is the demo swift app for apple pay, the encrypted data and ephemeralPublicKey can be found on xcode output after apple pay process successfully.
 
 Note: 
 
