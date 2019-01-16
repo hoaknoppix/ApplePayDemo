@@ -1,5 +1,0 @@
-language: objective-c
-osx_image: xcode10.1
-xcode_workspace: ApplePayDemo.xcworkspace
-xcode_scheme: ApplePayDemo
-xcode_sdk: iphonesimulator12.1
